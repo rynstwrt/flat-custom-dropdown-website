@@ -30,6 +30,7 @@ section
 {
 	font-family: $font;
 	text-transform: uppercase;
+	text-align: right;
 	width: 250px;
 	user-select: none;
 	-ms-user-select: none;
@@ -40,7 +41,7 @@ section
 
 	p
 	{
-		text-align:  right;
+		margin: 12px 0;
 
 		&::after
 		{
@@ -58,16 +59,16 @@ section
 	{
 		background-color: white;
 		flex-flow: column nowrap;
-		text-align: center;
-		border-radius: 8px;
+		border-radius: 2px;
 		overflow: hidden;
 		display: none;
 
 		a
 		{
-			padding: 6px;
+			padding: 8px;
 			color: $accent2;
 			text-decoration: none;
+			font-size: .9rem;
 
 			&:hover
 			{
