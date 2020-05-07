@@ -32,6 +32,7 @@ section
 	text-transform: uppercase;
 	text-align: right;
 	width: 250px;
+	max-height: 400px;
 	user-select: none;
 	-ms-user-select: none;
 	-moz-user-select: none;
@@ -41,7 +42,7 @@ section
 
 	p
 	{
-		margin: 12px 0;
+		padding: 12px 0;
 
 		&::after
 		{
@@ -52,6 +53,11 @@ section
 		&:hover
 		{
 			text-decoration: underline;
+
+			&::after
+			{
+				content: ' ^';
+			}
 		}
 	}
 

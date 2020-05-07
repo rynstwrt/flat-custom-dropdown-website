@@ -8,18 +8,29 @@ function hideAll()
 
 document.querySelectorAll("section p").forEach(obj =>
 {
-	obj.addEventListener("mouseover", e =>
+	obj.addEventListener("mouseover", e1 =>
 	{
-		hideAll();
-		const div = e.target.parentElement.children[1];
-		div.style.display = "flex";
-	});
-});
 
-document.querySelector("body").addEventListener("click", e =>
-{
-	if (e.target.tagName !== 'P')
-	{
-		hideAll();
-	}
+		const section = e1.target.parentElement;
+		const div = section.children[1];
+		div.style.display = "flex";
+
+		section.addEventListener("mouseleave", e2 =>
+		{
+			hideAll();
+		});
+
+		div.addEventListener("mouseleave", e2 =>
+		{
+			hideAll();
+		});
+	});
+
+
+
+
+
+
+
+
 });
