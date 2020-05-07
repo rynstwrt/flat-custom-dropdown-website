@@ -53,11 +53,6 @@ section
 		&:hover
 		{
 			text-decoration: underline;
-
-			&::after
-			{
-				content: ' ^';
-			}
 		}
 	}
 
