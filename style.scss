@@ -23,12 +23,14 @@ body
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
-	padding: 150px;
+	$bodypadding: 200px;
+	padding: $bodypadding $bodypadding 0 $bodypadding;
 }
 
 section
 {
 	font-family: $font;
+	font-weight: 400;
 	text-transform: uppercase;
 	text-align: right;
 	width: 250px;
@@ -42,7 +44,7 @@ section
 
 	p
 	{
-		padding: 12px 0;
+		padding: 8px 0;
 
 		&:hover
 		{
