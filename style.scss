@@ -44,15 +44,15 @@ section
 	{
 		padding: 12px 0;
 
-		&::after
-		{
-			text-transform: none;
-			content: ' v';
-		}
-
 		&:hover
 		{
 			text-decoration: underline;
+		}
+
+		.after
+		{
+			text-decoration: none;
+			text-transform: none;
 		}
 	}
 
@@ -60,7 +60,7 @@ section
 	{
 		background-color: white;
 		flex-flow: column nowrap;
-		border-radius: 2px;
+		border-radius: 3px;
 		overflow: hidden;
 		display: none;
 
